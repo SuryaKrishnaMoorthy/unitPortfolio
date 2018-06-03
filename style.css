@@ -1,0 +1,102 @@
+body {
+  position: relative;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active {
+  border-bottom: 1px solid #EEE !important;
+}
+
+.navbar-nav>li {
+  margin: 0px 1px;
+}
+
+#about {
+  position: relative;
+  text-align: center;
+  background-color: #22A39F;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header h1, .header h4 {
+  font-weight: bold;
+  color: #FFF !important;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#about, #profile, #skills, #experience, #education {
+  padding-top: 40px;
+  min-height: 100vh;
+}
+
+#profile, #skills {
+  background-color: #EEE;
+}
+
+#experience, #education {
+  background-color: #FFF;
+}
+
+.section {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.sectionBody {
+  margin-top: 3em;
+}
+
+h1, h3, .location {
+  color: #22A39F !important;
+}
+
+.aboutMe {
+  font-size: 14px !important;
+  text-align: left;
+}
+
+.image {
+  margin: 20px auto;
+}
+
+.location {
+  margin-bottom: 1em;
+  margin-top: 2px;
+}
+
+.location a:link, .location a:visited, .location a:hover, .location a:active {
+  text-decoration: none !important;
+  color: #22A39F !important;
+}
+
+.skillList {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  min-width: 175px;
+}
+
+.skillList>li {
+  margin-bottom: 1em;
+}
+
+.skillList>li:hover {
+  background: #CCCCCC;
+}
+
+.skillLabel {
+  display: inline-block;
+}
+
+.skillValue {
+  float: right;
+  width: 40%;
+  height: 15px !important;
+  margin-bottom: 0px !important;
+  margin-top: 2px !important;
+}
