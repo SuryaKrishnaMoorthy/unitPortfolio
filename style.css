@@ -1,102 +1,256 @@
 body {
-  position: relative;
+    position: relative;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active {
-  border-bottom: 1px solid #EEE !important;
+.navbar-nav li a:hover,
+.navbar-nav li.active {
+    border-bottom: 1px solid #EEE !important;
 }
 
 .navbar-nav>li {
-  margin: 0px 1px;
+    margin: 0px 1px;
 }
 
 #about {
-  position: relative;
-  text-align: center;
-  background-color: #22A39F;
+    position: relative;
+    text-align: center;
+    background-color: #20ada8;
 }
 
 .header {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.header h1, .header h4 {
-  font-weight: bold;
-  color: #FFF !important;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+.header h1,
+.header h3 {
+    font-weight: bold;
+    color: #FFF !important;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-#about, #profile, #skills, #experience, #education {
-  padding-top: 40px;
-  min-height: 100vh;
+.header h3 {
+    -webkit-animation: fade-in 3s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fade-in 3s;
+    /* Firefox < 16 */
+    -ms-animation: fade-in 3s;
+    /* Internet Explorer */
+    -o-animation: fade-in 3s;
+    /* Opera < 12.1 */
+    animation: fade-in 3s;
 }
 
-#profile, #skills {
-  background-color: #EEE;
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-#experience, #education {
-  background-color: #FFF;
+
+/* Firefox < 16 */
+@-moz-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Internet Explorer */
+@-ms-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Opera < 12.1 */
+@-o-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header hr {
+    background-color: #FFF !important;
+    color: #FFF !important;
+    height: 1.5px !important;
+    -webkit-animation: grow 3s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: grow 3s;
+    /* Firefox < 16 */
+    -ms-animation: grow 3s;
+    /* Internet Explorer */
+    -o-animation: grow 3s;
+    /* Opera < 12.1 */
+    animation: grow 3s;
+}
+
+@keyframes grow {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Firefox < 16 */
+@-moz-keyframes grow {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes grow {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Internet Explorer */
+@-ms-keyframes grow {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Opera < 12.1 */
+@-o-keyframes grow {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#about,
+#profile,
+#skills,
+#projects,
+#experience,
+#education {
+    padding-top: 40px;
+    min-height: 100vh;
+}
+
+#profile,
+#projects,
+#education {
+    background-color: #EEE;
+}
+
+#experience,
+#skills {
+    background-color: #FFF;
 }
 
 .section {
-  margin-left: 5em;
-  margin-right: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 .sectionBody {
-  margin-top: 3em;
+    margin-top: 3em;
 }
 
-h1, h3, .location {
-  color: #22A39F !important;
+h1,
+h3,
+.location {
+    color: #20ada8 !important;
 }
 
 .aboutMe {
-  font-size: 14px !important;
-  text-align: left;
+    font-size: 14px !important;
+    text-align: left;
 }
 
 .image {
-  margin: 20px auto;
+    margin: 20px auto;
 }
 
 .location {
-  margin-bottom: 1em;
-  margin-top: 2px;
+    margin-bottom: 1em;
+    margin-top: 2px;
 }
 
-.location a:link, .location a:visited, .location a:hover, .location a:active {
-  text-decoration: none !important;
-  color: #22A39F !important;
+.location a:link,
+.location a:visited,
+.location a:hover,
+.location a:active {
+    text-decoration: none !important;
+    color: #20ada8 !important;
 }
 
 .skillList {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  min-width: 175px;
+    list-style-type: none;
+    padding: 0px;
+    min-width: 200px;
+    max-width: 475px;
 }
 
 .skillList>li {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .skillList>li:hover {
-  background: #CCCCCC;
+    background: #CCCCCC;
 }
 
 .skillLabel {
-  display: inline-block;
+    display: inline-block;
 }
 
-.skillValue {
-  float: right;
-  width: 40%;
-  height: 15px !important;
-  margin-bottom: 0px !important;
-  margin-top: 2px !important;
+.skillScore {
+    float: right;
+}
+
+.filled {
+    color: #20ada8 !important;
+    font-size: 16px !important;
+}
+
+.empty {
+    color: #B3B9B9 !important;
+    font-size: 16px !important;
 }
